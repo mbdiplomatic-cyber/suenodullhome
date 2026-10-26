@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen (herramienta integrada)",
+  "purpose": "Tres referencias fotorealistas ilustrativas; no fotografías del taller ni prueba de materiales específicos.",
+  "images": [
+    {
+      "key": "estructura",
+      "prompt": "photorealistic-natural. Create a single square documentary editorial reference photograph of an actual-looking unfinished wooden sofa frame, three-quarter view at normal eye level, joints and corner braces clearly visible, plausible carpentry with screws and real grain, slight uneven wood tones and workshop marks, no upholstery, no metal frame. Set in a modest tidy upholstery studio, blurred beige plaster wall and wooden workbench behind, natural side window light, neutral warm beige color palette. True optical photography, 50mm lens, realistic scale, restrained contrast, imperfect honest material texture, not a glossy CGI render, no split panels, no collage, no words, no logos, no people. Image is an illustrative reference for furniture construction, not documentation of any named company.",
+      "file": "dist/assets/estructura-madera-v2.jpg"
+    },
+    {
+      "key": "suspension",
+      "prompt": "photorealistic-natural. Single square close-up editorial documentary photograph of realistic furniture upholstery seat suspension: flat beige elastic upholstery webbing straps correctly woven in a tight perpendicular over-under basket grid and securely stapled to a real wooden sofa seat frame, viewed diagonally from above. Show wood grain, tiny staple heads and detailed woven fibers, taut support, believable professional construction. Modest upholstery studio background softly blurred, warm window daylight, neutral cream beige palette, 50mm lens, honest natural irregularities and shadows. Only one coherent photo, no collage, no cutaway CGI, no metallic frame, no text, no logos, no people. Generic illustrative reference, no brand claims.",
+      "file": "dist/assets/suspension-v2.jpg"
+    },
+    {
+      "key": "espumas",
+      "prompt": "photorealistic-natural. One square editorial product-detail photograph of real-looking upholstery materials on a lightly worn wooden work table: three thick rectangular blocks of cream and pale yellow polyurethane upholstery foam, loosely stacked slightly offset so fine open-cell porous texture and cut edges are plainly visible; beside and partially over one block, a small fluffy white polyester batting sheet showing fine tangled fibers. One coherent still life photographed at table height three-quarter angle, natural soft window light from left, warm beige background out of focus. Realistic foam pore scale, subtle irregular cut marks, matte surfaces, no waxy CGI, no exaggerated fluffy cloud, no seamless 3D-render aesthetic, no text, no logos, no labels, no hands. Generic educational reference photo aesthetic.",
+      "file": "dist/assets/espumas-rellenos-v2.jpg"
+    }
+  ]
+}
