@@ -12,7 +12,7 @@ try{
 const {targetId}=await send('Target.createTarget',{url:'about:blank'});const {sessionId}=await send('Target.attachToTarget',{targetId,flatten:true});
 const evaluate=async expression=>{const result=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true},sessionId);if(result.exceptionDetails)throw Error(JSON.stringify(result.exceptionDetails));return result.result.value;};
 await send('Page.enable',{},sessionId);await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false},sessionId);
-await send('Page.navigate',{url:pathToFileURL(path.resolve('sueno-dull-home/dist/index.html')).href},sessionId);
+await send('Page.navigate',{url:pathToFileURL(path.resolve(import.meta.dirname, '../index.html')).href},sessionId);
 for(let i=0;i<50;i++){if(await evaluate('document.readyState==="complete" && !!document.querySelector(".fabric-card")'))break;await new Promise(r=>setTimeout(r,100));}
 assert.equal(await evaluate('document.querySelectorAll(".fabric-card").length'),7);
 assert.equal(await evaluate('getComputedStyle(document.body).backgroundColor'),'rgb(244, 238, 228)');
